@@ -2838,7 +2838,8 @@ GameObject:
   - component: {fileID: 2064076797}
   - component: {fileID: 2064076796}
   - component: {fileID: 2064076798}
-  m_Layer: 0
+  - component: {fileID: 2064076799}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3006,6 +3007,21 @@ MonoBehaviour:
   speed: 10
   countText: {fileID: 500874386}
   winTextObject: {fileID: 1166232164}
+--- !u!114 &2064076799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064076791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd946cae54656248a0f71c67b4d22a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 6475560228868453090, guid: bfc9f94c02a2d0f4e96f5396e3c3c123, type: 3}
+  projectileSpeed: 10
+  gap: 0.5
 --- !u!1 &2137494638
 GameObject:
   m_ObjectHideFlags: 0
@@ -3063,7 +3079,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2.5
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
