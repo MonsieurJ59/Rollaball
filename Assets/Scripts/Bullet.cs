@@ -11,5 +11,14 @@ public class bullet : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.tag == "Wall")
+        {
+            // Détruire le projectile lorsqu'il entre en collision avec un autre objet
+            Destroy(gameObject);
+        }
+
+        // Se détruire au bout de 2 secondes
+        Destroy(gameObject, 2);
     }
 }
